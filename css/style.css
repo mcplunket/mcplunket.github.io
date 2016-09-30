@@ -9,6 +9,9 @@ body{
       background-attachment: fixed;
       color: white;
 }
+.icon-bar{
+  background-color: white;
+}
 nav a{
   font-family: 'Raleway', sans-serif;
   color: white;
@@ -80,6 +83,7 @@ padding-bottom: 30px;
 }
 .work-button{
   display:none;
+    padding-top: 80px;
 }
 .winery:hover .work-button{
   display:block;
@@ -87,9 +91,6 @@ padding-bottom: 30px;
 .work-button:hover a{
   color: #5bc0de;
   border: 1px solid #5bc0de;
-}
-.work-button{
-  padding-top: 80px;
 }
 .retail:hover .work-button{
   display:block;
@@ -142,6 +143,7 @@ padding-bottom: 30px;
 }
 label{
   font-family: 'Raleway', sans-serif;
+  font-weight: 300;
 }
 .links{
   padding-top: 50px;
@@ -160,8 +162,74 @@ label{
   height: 300px;
 }
 
-/*
-MEDIA*/
-/*#hero{
-  background-attachment: local;
-}*/
+
+/*MEDIA*/
+@media (min-width:768px) and (max-width:1024px){
+  body{
+    background-attachment: local;
+  }
+  .space{
+    margin-top: 40px;
+  }
+  .winery, .retail, .restaurant, .business{
+    height: 300px;
+}
+.about-image{
+  padding-top: 20px;
+}
+.about-text p{
+  padding: 20px 30px 30px 0px;
+  font-size: 24px;
+  text-align: center;
+}
+.progress{
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.work-button{
+  display:none;
+    padding-top: 120px;
+}
+}
+@media (max-width:767px){
+  body{
+    background-attachment: local;
+  }
+  body{
+    background-attachment: local;
+  }
+  .space{
+    margin-top: 40px;
+  }
+  .winery, .retail, .restaurant, .business{
+    height: 300px;
+}
+.about-image{
+  padding-top: 20px;
+}
+.about-text p{
+  padding: 20px 30px 30px 0px;
+  font-size: 24px;
+  text-align: center;
+}
+.progress{
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.work-button{
+  display:none;
+    padding-top: 120px;
+}
+#hero {
+  height: 500px;
+  color: white;
+}
+#hero h3{
+  padding-top: 200px;
+  font-size: 30px;
+  line-height: 2;
+}
+
+}
